@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cat << 'EOF'
             .''           Star Stable Linux Launcher
   ._.-.___.' (`\          @megabytesofrem
