@@ -45,8 +45,8 @@
 
   runScript = pkgs.writeScript "init.sh" ''
     #!/usr/bin/env bash
-    chmod +x sso-linux.sh
-    python3 sso-linux-gui.py
-    # exec ./sso-linux.sh
+    chmod +x scripts/star-stable-linux.sh
+    python3 star-stable-linux-gui.py
+    # exec ./scripts/star-stable-linux.sh
   '';
 }).env
