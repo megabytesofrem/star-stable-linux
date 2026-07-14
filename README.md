@@ -10,6 +10,7 @@ Unofficial, native Linux launcher for Star Stable Online.
 ## Usage
 - For every other distro: `python3 star-stable-linux-gui.py`
 - For NixOS: `nix-shell`
+- CLI: `./scripts/star-stable-linux [install|uninstall|launch]`
 
 ## Additional Information
 The Star Stable logo used as the main header image belongs to its owners Star Stable Entertainment AB.

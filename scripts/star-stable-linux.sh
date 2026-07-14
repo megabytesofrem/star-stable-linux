@@ -32,16 +32,6 @@ if ! command -v wine &> /dev/null; then
     exit 1
 fi
 
-uninstall() {
-    if [ -d "$WINEPREFIX" ]; then
-        echo "Installer: Uninstalling Star Stable..."
-        rm -rf "$WINEPREFIX"
-        echo "Installer: Star Stable has been uninstalled."
-    else
-        echo "Installer: Star Stable is not installed."
-    fi
-}
-
 install() {
     # Initialize a new Wine prefix for Star Stable
     mkdir -p "$WINEPREFIX"
@@ -59,6 +49,17 @@ install() {
     cd "$WINEPREFIX/drive_c" || exit 1
     wine starstable_installer.exe
 }
+
+uninstall() {
+    if [ -d "$WINEPREFIX" ]; then
+        echo "Installer: Uninstalling Star Stable..."
+        rm -rf "$WINEPREFIX"
+        echo "Installer: Star Stable has been uninstalled."
+    else
+        echo "Installer: Star Stable is not installed."
+    fi
+}
+
 
 launch() {
     echo "Installer: Launching Star Stable..."
